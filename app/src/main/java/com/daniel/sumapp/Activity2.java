@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import java.text.NumberFormat;
+
 public class Activity2 extends AppCompatActivity {
 
     @Override
@@ -23,7 +25,8 @@ public class Activity2 extends AppCompatActivity {
         textView2.setText(text);
         textView3.setText(number);
 
-        textView6.setText(text+number);
+        int result = Integer.parseInt(text) + Integer.parseInt(number);
+        textView6.setText(String.valueOf(result));
 
     }
 }
